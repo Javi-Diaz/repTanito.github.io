@@ -96,12 +96,15 @@ body{
     text-align: center;
     align-self: center;
     font-size: 2rem;
-
+    color: #00017B;
+    width: min-content;
 }
 
 .header-nav{
     display: flex;
     margin: 2rem 0;
+    transform: rotate(0deg) scale(1.003) skew(-25deg) translate(0px);
+    transform-style: flat;
 }
 
 .header-nav-ul-fondo{
@@ -150,6 +153,7 @@ body{
 .slider{
     display: flex;
     width: 400%;
+
     margin-left: -100%;
 }
 .slider-section{
