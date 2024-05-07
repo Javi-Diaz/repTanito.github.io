@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(img/img23.jpeg);
+    background-image: url(../img/img23.jpeg);
     
 }
 
@@ -100,6 +100,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     transition: top .7s linear;
+
 }
 
 .header-nav-ul-li a{
@@ -121,158 +122,67 @@ body{
     background-color: #042a8371 !important;
 }
 
-
-/*SLIDER PROPAGANDA*/
-.container-slider{
+/* FORMULARIO */
+.caja-formulario{
     width: 100%;
-    overflow: hidden;
-}
-
-.slider{
     display: flex;
-    width: 400%;
-
-    margin-left: -100%;
-}
-.slider-section{
-    width: 100%;
-    position: relative;
+    flex-direction: column;
+    padding: 1rem;
 }
 
-.slider-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slider-sombra{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.603);
-}
-
-.slider-h3{
-    width: 100%;
-    position: absolute; 
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.caja-formulario h3{
     text-align: center;
-    font-weight: 300;
-    color: #fff;
-}
-
-.slider-h2{
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: 800;
-    color: #fff;
-    font-size: 2.3rem;
-}
-
-/* SECTION 2 */
-.section2{
-    width: 100%;
-    overflow: hidden;
-    padding: 1.5rem;
-    position: relative;
-}
-
-.section2 .section2-img{
-    width: 100%;
-    height: 20rem;
-    object-fit: contain;
-}
-
-.section2 h2{
-    margin: 1.4rem 0;
     color: #042a83;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
-.section2 p{
-    line-height: 1.6rem;
+.caja-formulario p{
+    text-align: center;
 }
 
-/* SECTION 3 */
-.section3{
+.formulario{
     width: 100%;
-    position: relative;
-}
-
-.section3-div1{
-    width: 90%;
-    margin: 1rem auto;
-    background-color: hsla(195, 70%, 22%, 0.50);
     display: flex;
-    flex-wrap: wrap;
-    padding: .5rem;
+    flex-direction: column;
 }
 
-.section3-div1 img{
-    width: 12rem;
-    height: 12rem;
+.formulario label{
+    margin: .5rem 0;
+    font-weight: 600;
+    color: #042a83; 
 }
 
-
-.section3-div1 h2{
-    width: min-content;
-    color: #fff;
-    padding-left: .5rem;
-    align-self: center;
+.formulario-input{
+    padding: .8rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #00017B;
+    outline: none;
 }
 
-.section3-div1 p{
-    padding-top: .8rem;
-    color: #fff;
-    line-height: 1.4rem;
+.formulario-input:focus{
+    border: 1px solid #00017B;
 }
 
-.section3-div2{
-    width: 90%;
-    margin: 1rem auto;
-    position: relative;
-    overflow: hidden;
+.formulario-btn{
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 2rem auto 2rem auto;
+    color: #00017B;
+    border: 1px solid #00017B;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 1rem;
 }
 
-.section3-div2-img{
-    position: absolute;
-    z-index: -15;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.section3-div2-sombra{
-    position: absolute;
-    z-index: -12;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, .5) 0, rgba(0, 40, 80, .5) 100%);
-}
-
-.section3-div2-titulo{
-    padding: 2rem .5rem 1rem .5rem;
+.formulario-btn:focus{
+    background-color: #00017B;
     color: #fff;
 }
-
-.section3-division{
-    width: 80%;
-    height: .1rem;
-    background-color: #fff;
-    margin-left: .5rem;
-}
-
-.section3-div2-texto{
-    color: #fff;
-    padding: 1rem .5rem 2rem .5rem;
-}
-
 
 /* FOOTER */
 .footer{
