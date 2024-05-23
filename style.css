@@ -8,7 +8,6 @@
 
 body{
     background-image: url(img/img23.jpeg);
-    
 }
 
 /* BOTON DE WHATSAPP */
@@ -112,7 +111,7 @@ body{
     background-color: #9D9D9D;
 }
 
-.header-nav-ul-li a:active{
+.header-nav-ul-li a:active, .header-nav-ul-li a:hover{
     background-color: #042a8371;
 }
 
@@ -176,18 +175,25 @@ body{
     font-size: 2.3rem;
 }
 
+/* DIV RESPONSIVE */
+.div-contenedor-responsive{
+    width: 100%;
+}
+
 /* SECTION 2 */
 .section2{
     width: 100%;
-    overflow: hidden;
     padding: 1.5rem;
-    position: relative;
 }
 
 .section2 .section2-img{
     width: 100%;
     height: 20rem;
     object-fit: contain;
+}
+
+.section2-caja-texto{
+    width: 100%;
 }
 
 .section2 h2{
@@ -219,6 +225,9 @@ body{
     height: 12rem;
 }
 
+.section3-div1-caja-texto{
+    width: 100%;
+}
 
 .section3-div1 h2{
     width: min-content;
@@ -344,7 +353,7 @@ body{
     height: 2.8rem;
 }
 
-.footer-redes a:active{
+.footer-redes a:active, .footer-redes a:hover{
     background-color: #042a83;
     color: #fff;
 }
@@ -381,4 +390,199 @@ body{
 }
 
 
+/* RESPONSIVE */
+@media screen and (min-width:425px) {
+    /* SECTION 3 */
+    .section3-div1,.section3-div2{
+        max-width: 23.906rem;
+    }
+}
 
+@media screen and (min-width:500px) {
+    /* SECTION 2 */
+    .section2{
+        display: flex;
+    }
+
+    .section2-img{
+        max-width: 18rem;
+    }
+
+    .section2 h2{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:549px){
+    /* FOOTER */
+    .footer-direccion h3{
+        margin: 0 0 .4rem 0;
+    }
+
+    .footer-horarios h3{
+        margin-top: .4rem;
+    }
+}
+
+@media screen and (min-width:615px){
+    /* SECTION 2 */
+    .section2{
+        max-width: 38.438rem;
+    }
+}
+
+@media screen and (min-width:622px){
+    /* GENERAL */
+    body{
+        background-image: url(img/fondo2.png);
+        background-size: contain;
+    }
+}
+
+
+@media screen and (min-width:625px){
+    /* SECTION 3 */
+    .section3{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:729px){
+    /* FOOTER */
+    .footer-redes h3{
+        margin: 0 0 .4rem 0;
+    }
+}
+
+@media screen and (min-width:900px){
+    /* DIV RESPONSIVE | SECTION 2 | SECTION 3*/
+    .div-contenedor-responsive{
+        display: flex;
+    }
+
+    .section2 .section2-img {
+        height: 80%;
+    }
+
+    .section3{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:973px){
+    /* FOOTER */
+    .footer-horarios h3{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width:1024px){
+    /* HEADER */
+    .header{
+        position: relative;
+    }
+
+    .header-logo{
+        justify-content: flex-start;
+    }
+
+    .header-logo img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .header-logo h2{
+        margin-left: 1rem;
+        font-size: 1.6rem;
+    }    
+
+    .header-redes {
+        padding: .5rem;
+    }
+
+    .header-redes a{
+        padding: .6rem;
+        font-size: 1rem;
+    }
+
+    .header-nav{
+        position: absolute;
+        top: 46.8px;
+        right: 2rem;
+    }
+
+    .header-nav-ul-li {
+        margin: 0 2rem 0 2rem;
+    }
+
+    /* SLIDER */
+    .container-slider{
+        max-height: 38rem;
+    }
+    .slider{
+        max-height: 38rem;
+    }
+}
+
+@media screen and (min-width:1115px){
+    /* SLIDER */
+    .container-slider{
+        max-height: 42rem;
+    }
+
+    .slider{
+        max-height: 42rem;
+    }
+
+    /* SECTION 3 */
+    .section3-div1{
+        max-width: 90%;
+        height: 19.688rem;
+        position: relative;
+    }
+
+    .section3-div1 img{
+        height: 100%;
+    }
+
+    .section3-div1 h2{
+        align-self: flex-start;
+        width: max-content;
+    }
+
+    .section3-div1 p{
+        position: absolute;
+        left: 13rem;
+        top: 4rem;
+    }
+
+    .section3-div2{
+        max-width: 90%;
+        height: 17rem;
+    }
+
+    /* FOOTER */
+    .footer-contacto,.footer-contacto,.footer-direccion, .footer-redes, .footer-horarios{
+        margin-left: 3rem;
+    } 
+}
+
+@media screen and (min-width:1365px){
+    /* SECTION 2 | SECTION 3 */
+    .section3-div1, .section3-div2{
+        max-width: 80%;
+    }
+
+    /* FOOTER */
+    .footer-contacto,.footer-contacto,.footer-direccion, .footer-redes, .footer-horarios{
+        margin-left: 5rem;
+    } 
+}
+
+@media screen and (min-width:1535px){
+    /* SECTION 3 */
+    .section3-div1, .section3-div2{
+        max-width: 65%;
+
+    }
+}

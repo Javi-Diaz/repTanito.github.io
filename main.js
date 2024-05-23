@@ -20,5 +20,5 @@ setInterval(function(){
 },3000) 
 
 
-
+let body = document.querySelector("body");
 
