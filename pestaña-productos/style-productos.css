@@ -113,7 +113,7 @@ body{
     background-color: #9D9D9D;
 }
 
-.header-nav-ul-li a:active{
+.header-nav-ul-li a:active, .header-nav-ul-li a:hover{
     background-color: #042a8371;
 }
 
@@ -131,11 +131,6 @@ body{
 .productos .productos-titulo{
 	text-align: center;
 	font-size: 30px;
-	position: absolute;
-    z-index: 100;
-    left: 50%;
-    transform: translate(-50%, 10px);
-    min-width: max-content;
     color: #00017B;
 }
 
@@ -311,7 +306,7 @@ body{
     height: 2.8rem;
 }
 
-.footer-redes a:active{
+.footer-redes a:active, .footer-redes a:hover{
     background-color: #042a83;
     color: #fff;
 }
@@ -347,8 +342,117 @@ body{
     margin:  0 .8rem 1rem .8rem;
 }
 
+/* RESPONSIVE */
+@media screen and (min-width:549px){
+    /* FOOTER */
+    .footer-direccion h3{
+        margin: 0 0 .4rem 0;
+    }
 
+    .footer-horarios h3{
+        margin-top: .4rem;
+    }
+}
 
+@media screen and (min-width:622px){
+    /* GENERAL */
+    body{
+        background-image: url(../img/fondo2.png);
+        background-size: contain;
+    }
+}
 
+@media screen and (min-width:729px){
+    /* FOOTER */
+    .footer-redes h3{
+        margin: 0 0 .4rem 0;
+    }
+}
+
+@media screen and (min-width:973px){
+    /* FOOTER */
+    .footer-horarios h3{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width:1024px){
+    /* HEADER */
+    .header{
+        position: relative;
+    }
+    
+    .header-logo{
+        justify-content: flex-start;
+    }
+    
+    .header-logo img{
+        height: 5rem;
+        width: 5rem;
+    }
+    
+    .header-logo h2{
+        margin-left: 1rem;
+        font-size: 1.6rem;
+    }    
+    
+    .header-redes {
+        padding: .5rem;
+    }
+    
+    .header-redes a{
+        padding: .6rem;
+        font-size: 1rem;
+    }
+    
+    .header-nav{
+        position: absolute;
+        top: 46.8px;
+        right: 2rem;
+    }
+    
+    .header-nav-ul-li {
+        margin: 0 2rem 0 2rem;
+    }
+
+    .productos .productos-conteiner .caja-producto{
+    width: 280px !important;
+    height: 350px;
+    }
+    .productos .productos-conteiner .caja-producto img{
+        height: 290px;
+    }
+
+    .productos .productos-conteiner{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+        align-content: flex-start;
+    } 
+
+    .productos .productos-conteiner .caja-producto{
+        margin: 1rem auto;
+    }
+
+    .section3-div2{
+        height: 20rem;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1115px){
+    /* FOOTER */
+    .footer-contacto,.footer-contacto,.footer-direccion, .footer-redes, .footer-horarios{
+        margin-left: 3rem;
+    } 
+}
+
+@media screen and (min-width:1365px){
+    /* FOOTER */
+    .footer-contacto,.footer-contacto,.footer-direccion, .footer-redes, .footer-horarios{
+        margin-left: 5rem;
+    } 
+}
 
 
